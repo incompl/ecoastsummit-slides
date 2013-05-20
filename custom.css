@@ -1,0 +1,26 @@
+body {
+  text-align: center;
+}
+
+img {
+  vertical-align: middle;
+  max-height: 100%;
+}
+
+blockquote {
+  text-align: left;
+  padding: 0 .5em;
+  border-left: solid gray .5em;
+}
+
+s {
+  text-decoration: none;
+  background-image: url("./images/strike.png");
+  background-size: 100% 100%;
+  background-position: 0 5px;
+}
+
+#bocoup-related img {
+  max-width: 80px;
+  margin: 20px;
+}
