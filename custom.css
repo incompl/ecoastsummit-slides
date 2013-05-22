@@ -1,8 +1,25 @@
 body {
   text-align: center;
-  margin: 0;
+  margin: 0 5em;
   padding: 0;
+  font-family: helvetica, sans-serif;
 }
+
+a:link, a:visited {
+  color: #CA0000;
+  display: inline-block;
+}
+
+a:hover {
+  color: white;
+  background-color: #CA0000;
+  text-shadow: 1px 0 0 black;
+}
+
+a:active {
+  color: black;
+}
+
 
 h1 {
   margin: 0 0 1em 0;
@@ -12,27 +29,62 @@ h1 {
 img {
   vertical-align: middle;
   max-height: 80%;
+  max-width: 100%;
 }
 
 blockquote {
   text-align: left;
   padding: 0 .5em;
+  margin: 0;
   border-left: solid gray .5em;
   border-radius: .25em;
 }
 
 s {
   text-decoration: none;
-  background-image: url("./images/strike.png");
+  background-image: url("./images/strike.svg");
   background-size: 100% 100%;
-  background-position: 0 5px;
+  color: rgb(102, 102, 102);
+}
+
+code {
+  background-color: rgb(233, 233, 233);
+  white-space: nowrap;
+  font-weight: normal;
 }
 
 .slide {
-  padding: 2em 0 0;
+  padding: 10% 0 0 0;
+}
+
+.no-underline {
+  text-decoration: none;
+}
+
+.big {
+  font-size: 3em;
+}
+
+.huge {
+  font-size: 500px;
+  vertical-align: middle;
 }
 
 #bocoup-related img {
   max-width: 80px;
   margin: 20px;
+}
+
+@media screen and (max-width:599px) {
+  body {
+    font-size: 1.5em;
+    margin: .5em;
+  }
+  h1 {
+    font-size: 1.5em;
+  }
+  s {
+    background-image: none;
+    text-decoration: line-through;
+  }
 }

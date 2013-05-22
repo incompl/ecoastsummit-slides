@@ -114,7 +114,8 @@ $(function() {
     var scrollTop = $(window).scrollTop();
     $slides.each(function() {
       var $slide = $(this);
-      if (!$closest || $slide.position().top <
+      var padding = $slide.innerHeight() - $slide.height();
+      if (!$closest || $slide.position().top + padding <
                        scrollTop + ($(window).height() / 2)) {
         $closest = $slide;
       }

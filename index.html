@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Greg Smith's ECRDS Slides</title>
+    <title>The Dream</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="slide.css" media="screen">
     <link rel="stylesheet" href="custom.css" media="screen">
@@ -24,10 +24,10 @@
     <div id="wrapper">
 
       <div class="slide">
-        <h1>i'm greg</h1>
+        <h1>I'm Greg</h1>
         <p>
           <img src="./images/me.png" alt="">
-          <a href="http://twitter.com/_gsmith">@_gsmith</a>
+          <a class="no-underline" href="http://twitter.com/_gsmith">@_gsmith</a>
         </p>
       </div>
 
@@ -35,6 +35,7 @@
         <a href="http://bocoup.com"><img src="./images/bocoup.png" alt="Bocoup"></a>
         <div id="bocoup-related">
           <a href="http://training.bocoup.com"><img src="./images/bocoup-training.png" alt="Bocoup Training"></a>
+          <a href="http://learnlayout.com"><img src="./images/bocoup-learnlayout.png" alt="Bocoup Training"></a>
           <a href="http://buildnewgames.com"><img src="./images/bocoup-bng.png" alt="Build New Games"></a>
           <a href="http://openvisconf.com"><img src="./images/bocoup-openvis.png" alt="OpenVis Conf"></a>
           <a href="http://backboneconf.com"><img src="./images/bocoup-backbone.png" alt="Backbone Conf"></a>
@@ -43,26 +44,32 @@
 
       <div class="slide">
         <h1>
-          let's talk about the
+          Let's talk about the
+          <br>
           <s>adaptive</s>
           <s>flexible</s>
           <s>fluid</s>
           <s>liquid</s>
           <s>mobile</s>
+          <br>
           <b>responsive</b>
-          web
+          web.
         </h1>
         </div>
       </div>
 
       <div class="slide">
         <blockquote>
-          Let's call this facility for readers to be able to adapt web based content for themselves <mark>adaptability</mark>. My heretical viewpoint is that adaptability isn't a problem, it is a particular strength of the web. And as web designers, we should be looking to make our web based information as <mark>adaptive</mark> as possible. We should move away from the holy grail of pixel perfection, and both design and implement pages in such a way as to enable adaptability as much as possible.
+          Let's call this facility for readers to be able to adapt web based content for themselves <mark>adaptability</mark>. My heretical viewpoint is that adaptability isn't a problem, it is a particular strength of the web.
         </blockquote>
       </div>
 
       <div class="slide">
-        <h1>that quote is from 1999</h1>
+        <img src="./images/adaptive-book.jpg" alt="Adaptive Web Design by Aaron Gustafson"><span class="huge">?</span>
+      </div>
+
+      <div class="slide">
+        <h1>That quote is from 1999, not 2011.</h1>
         <a href="http://www.westciv.com/style_master/house/good_oil/not_paper/">source</a>
       </div>
 
@@ -71,12 +78,13 @@
       </div>
 
       <div class="slide">
-        <blockquote>Recently, an emergent discipline called “<mark>responsive architecture</mark>” has begun asking how physical spaces can respond to the presence of people passing through them... Rather than tailoring disconnected designs to each of an ever-increasing number of web devices, we can treat them as facets of the same experience. We can design for an optimal viewing experience, but embed standards-based technologies into our designs to make them not only more flexible, but more <mark>adaptive</mark> to the media that renders them. In short, we need to practice <mark>responsive</mark> web design. But how?</blockquote>
+        <blockquote>Recently, an emergent discipline called “<mark>responsive architecture</mark>” has begun asking how physical spaces can respond to the presence of people passing through them... We can (make our designs) not only more flexible, but more <mark>adaptive</mark> to the media that renders them. In short, we need to practice <mark>responsive</mark> web design.</blockquote>
       </div>
 
       <div class="slide">
-        <h1>That one was 12 years later</h1>
-        <a href="http://alistapart.com/article/responsive-web-design">source</a>
+        <h1>That was 12 years later.</h1>
+        <img src="./images/alistapart.jpg" alt="A List Apart">
+        <div><a href="http://alistapart.com/article/responsive-web-design">source</a></div>
       </div>
 
       <div class="slide">
@@ -84,44 +92,62 @@
       </div>
 
       <div class="slide">
+        <h1>adaptive
+          <br>
+          =
+          <br>
+          responsive?</h1>
+      </div>
+
+      <div class="slide">
         <h1>
           let's talk about the
+          <br>
           <s>adaptive</s>
           <s>flexible</s>
           <s>fluid</s>
           <s>liquid</s>
           <s>mobile</s>
           <s>responsive</s>
+          <br>
           web
         </h1>
       </div>
 
       <div class="slide">
-        <h1>
+        <h1 class="big">
           The Web
         </h1>
       </div>
 
       <div class="slide">
         <h1>
-          So, what's actually new here?
+          So, if the idea isn't new, what is?
         </h1>
       </div>
 
       <div class="slide">
-        <h1>max-width?</h1>
-        <p>Sorta. 6 years ago it was in IE7.</p>
+        <h1><code>percent</code>?</h1>
+        <p>Old as dirt. 14 years ago in IE5.</p>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/percentage">source</a>
+      </div>
+
+      <div class="slide">
+        <h1><code>min-width</code> / <code>max-width</code>?</h1>
+        <p>Sorta. 6 years ago they were in IE7.</p>
         <a href="http://caniuse.com/minmaxwh">source</a>
       </div>
 
       <div class="slide">
-        <h1>actually good phones?</h1>
+        <h1>Actual good phones?</h1>
         <p>I guess. iPhone was also 6 years ago.</p>
-        <code>&lt;meta name="viewport" content="width=device-width"></code>
+        <code>&lt;meta name="viewport"
+          <br> 
+          content="width=device-width"></code>
       </div>
 
       <div class="slide">
-        <h1>@media?</h1>
+        <h1><code>@media</code>?</h1>
         <p>Well sure. 2 years ago it was in IE9.</p>
         <a href="http://caniuse.com/css-mediaqueries">source</a>
       </div>
@@ -131,13 +157,50 @@
       </div>
 
       <div class="slide">
-        <h1>This is about THE DREAM.</h1>
+        <h1>This is about</h1>
+        <h1 class="big">THE DREAM.</h1>
       </div>
 
       <div class="slide">
-        <a href="http://turntable.fm"><img src="./images/turntable.jpg" alt="turntable"></a>
+        <h1>Learn Anything, Anywhere.</h1>
       </div>
 
+      <div class="slide">
+        <a href="http://teamtreehouse.com"><img src="./images/dream-treehouse.png" alt="treehouse"></a>
+      </div>
+
+      <div class="slide">
+        <a href="http://openvisconf.com"><img src="./images/dream-openvis.png" alt="OpenVis Conf"></a>
+      </div>
+
+      <div class="slide">
+        <a href="http://status.heroku.com"><img src="./images/dream-heroku.png" alt="status.heroku.com"></a>
+      </div>
+
+      <div class="slide">
+        <a href="http://wikipedia.org"><img src="./images/dream-wikipedia.png" alt="Wikipedia"></a>
+      </div>
+
+      <div class="slide">
+        <h1>Stop thinking about the latest cool design trend...</h1>
+      </div>
+
+      <div class="slide">
+        <h1>Think about changing the way we live.</h1>
+      </div>
+
+      <div class="slide">
+        <img src="./images/ties.png" alt="skinnyties.com">
+        <a href="http://mediaqueri.es/">source</a>
+      </div>
+
+      <div class="slide">
+        <img src="./images/heimlich.png" alt="google search for hiemlich">
+      </div>
+
+      <div class="slide">
+        <h1>Thank you.</h1>
+      </div>
 
     </div>
   </body>
