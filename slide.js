@@ -26,6 +26,7 @@ $(function() {
   var $slides = $(".slide");
 
   var i;
+  var totalSlides;
   var slideMode = false;
   var slide;
   var totalSlides = $slides.length;
@@ -114,9 +115,8 @@ $(function() {
     var scrollTop = $(window).scrollTop();
     $slides.each(function() {
       var $slide = $(this);
-      var padding = $slide.innerHeight() - $slide.height();
-      if (!$closest || $slide.position().top + padding <
-                       scrollTop + ($(window).height() / 2)) {
+      var firstChildTop = $slide.children(":first").position().top;
+      if (!$closest || firstChildTop < scrollTop + ($(window).height() / 2)) {
         $closest = $slide;
       }
     });
@@ -184,20 +184,20 @@ $(function() {
         function delayed () {
             if (!execAsap)
                 func.apply(obj, args);
-            timeout = null;
-        }
+            timeout = null; 
+        };
         if (timeout)
             clearTimeout(timeout);
         else if (execAsap)
             func.apply(obj, args);
-        timeout = setTimeout(delayed, threshold || 100);
+        timeout = setTimeout(delayed, threshold || 100); 
     };
   }
 
   function isTouchDevice() {
-    return !!('ontouchstart' in window) || // works on most browsers 
-           !!('onmsgesturechange' in window); // works on ie10
-  }
+    return !!('ontouchstart' in window) // works on most browsers 
+        || !!('onmsgesturechange' in window); // works on ie10
+  };
 
   if (isTouchDevice()) {
     $("body")
