@@ -88,6 +88,9 @@ code {
   h1 {
     font-size: 1.5em;
   }
+  h2 {
+    font-size: 1.2em;
+  }
   s {
     background-image: none;
     text-decoration: line-through;
