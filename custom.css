@@ -62,11 +62,6 @@ code {
   padding: 10% 0 0 0;
 }
 
-.no-underline {
-  text-decoration: none;
-  padding: .5em;
-}
-
 .big {
   font-size: 3em;
 }
@@ -76,9 +71,26 @@ code {
   vertical-align: middle;
 }
 
+.no-underline {
+  text-decoration: none;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+#bocoup-related {
+  margin: 2em 0 0 0;
+}
+
 #bocoup-related img {
   max-width: 80px;
   margin: 20px;
+}
+
+#bad img {
+  width: 30%;
+  padding: 3%;
 }
 
 @media screen and (max-width:599px) {
